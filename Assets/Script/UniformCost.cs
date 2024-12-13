@@ -11,6 +11,12 @@ public class UniformCost : MonoBehaviour
     public Transform seeker, target; // Harita üzerindeki arayıcı (player) ve hedef
     public bool driveable = true; // Oyuncunun hareket edip edemeyeceği
 
+    // CSV için değişkenler
+    private int totalNodesVisited = 0; // Toplam ziyaret edilen düğüm sayısı
+    public static float totalPathCost = 0;      // Toplam maliyet
+    public static float realDistanceToTarget = 0; // Gerçek mesafe
+    private int totalCost = 0;  // Toplam maliyet fonksiyonu
+
     private void Awake()
     {
         grid = GetComponent<Grid>(); // Aynı nesneye bağlı olan Grid bileşenini al
@@ -45,6 +51,10 @@ public class UniformCost : MonoBehaviour
         startNode.gCost = 0; // Başlangıç düğümünün maliyetini 0 olarak ayarla
         openSet.Enqueue(startNode, startNode.gCost); // Başlangıç düğümünü açık kümeye ekle
 
+        // CSV
+        // Gerçek mesafeyi hesapla (Euclidean Distance)
+        realDistanceToTarget = Vector3.Distance(startPoz, targetPoz);
+
         while (openSet.Count > 0)
         {
             Node currentNode = openSet.Dequeue(); // En düşük maliyete sahip düğümü al
@@ -53,6 +63,11 @@ public class UniformCost : MonoBehaviour
             if (currentNode == targetNode)
             {
                 RetracePath(startNode, targetNode); // Hedeften başlangıca kadar yolu geri takip et
+
+                //CSV
+                totalPathCost = totalCost; // Hedefe ulaşıldığında toplam maliyeti kaydet
+                LogAlgorithmResultsOnce(totalNodesVisited, (int)totalPathCost, realDistanceToTarget); // Sonuçları kaydet
+                
                 return;
             }
 
@@ -110,7 +125,9 @@ public class UniformCost : MonoBehaviour
                     {
                         openSet.Enqueue(neighbour, neighbour.gCost); // Komşuyu açık kümeye ekle
                     }
-
+                   
+                    totalNodesVisited++; // Bir düğüm ziyaret edildi
+                    totalCost += newCostToNeighbour; // Toplam maliyeti güncelle
 
                 }
 
@@ -141,7 +158,15 @@ public class UniformCost : MonoBehaviour
 
         return 10 * (dstX + dstY);  // Manhattan mesafesini kullan (grid tabanlı hareket için uygun)
     }
-
+    private bool isLogged = false; // Tek seferlik loglama kontrolü
+    private void LogAlgorithmResultsOnce(int totalNodesVisited, int totalPathCost, float realDistanceToTarget)
+    {
+        if (!isLogged) // Eğer henüz loglanmadıysa
+        {
+            isLogged = true; // Loglama durumunu işaretle
+            CsvLogger.Log("", "", 0, 0, "", "UniformCostSearch", totalNodesVisited, totalPathCost, realDistanceToTarget); // Sonuçları CSV'ye yazdır
+        }
+    }
 
 }
 

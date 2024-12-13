@@ -49,11 +49,13 @@ public class Player : MonoBehaviour
         isRaining = rainStatus; // Yağmurun durumu güncelleniyor
         if (isRaining)
         {
+            Debug.Log("Yagmur basladi, yavasla");
             maxSpeed *= 0.7f; // Maksimum hız %70'e düşüyor
         }
         else
         {
             maxSpeed /= 0.7f; // Maksimum hız eski haline dönüyor
+            Debug.Log("Yagmur durdu, normal hizda ilerle");
         }
     }
 

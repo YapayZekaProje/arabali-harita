@@ -1,0 +1,28 @@
+﻿Tarih/Saat,Olay Turu,Olay Durumu,Olaya Mesafe (m),Hiz (Km/h),Arac Durumu,Algoritma Adı,Düğüm Sayısı,Maliyet, Gerçek Mesafe (m)
+23:39:28,,,0.00,0.0,,UniformCostSearch,472,142520,178.25
+23:39:53,Yaya,Algılandı,4.18,100.0,Duruyor,N/A,0,0,0.00
+23:40:01,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:40:04,Trafik Işığı Kırmızı,Algılandı,0.79,100.0,Duruyor,N/A,0,0,0.00
+23:40:28,Yaya,Algılandı,8.01,100.0,Duruyor,N/A,0,0,0.00
+23:40:35,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:40:36,Yaya,Algılandı,0.32,73.1,Duruyor,N/A,0,0,0.00
+23:40:39,Yaya,Geçiş Tamamlandı,0.00,100.0,Hareket Ediyor,N/A,0,0,0.00
+23:40:47,Yaya,Algılandı,8.23,50.0,Duruyor,N/A,0,0,0.00
+23:40:52,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:41:01,Yaya,Algılandı,8.16,50.0,Duruyor,N/A,0,0,0.00
+23:41:09,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:41:34,Yaya,Algılandı,8.25,100.0,Duruyor,N/A,0,0,0.00
+23:41:37,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:42:03,Yaya,Algılandı,7.69,100.0,Duruyor,N/A,0,0,0.00
+23:42:06,Yaya,Geçiş Tamamlandı,0.00,100.0,Hareket Ediyor,N/A,0,0,0.00
+23:42:08,Yaya,Algılandı,8.23,100.0,Duruyor,N/A,0,0,0.00
+23:42:13,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:42:15,,,0.00,0.0,,GreedySearch,45,10480,182.90
+23:42:28,Yaya,Algılandı,6.34,100.0,Duruyor,N/A,0,0,0.00
+23:42:34,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:42:40,Yaya,Algılandı,6.76,100.0,Duruyor,N/A,0,0,0.00
+23:42:41,Yaya,Geçiş Tamamlandı,0.00,60.3,Hareket Ediyor,N/A,0,0,0.00
+23:42:47,Yaya,Algılandı,8.25,50.0,Duruyor,N/A,0,0,0.00
+23:42:51,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:42:55,Yaya,Algılandı,5.59,0.0,Duruyor,N/A,0,0,0.00
+23:43:08,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00

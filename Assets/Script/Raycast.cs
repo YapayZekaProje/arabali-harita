@@ -8,6 +8,10 @@ public class RaycastDistance : MonoBehaviour
     Pathfinding pathfinding;
     Player player;
 
+    private string lastLightStatus = "Yeşil";  // Son trafik ışığı durumu
+    private bool isPedestrianLogged = false;  // Yaya geçişi yalnızca bir kez loglanacak
+    private bool isMovingLogged = false;  // Araç hareket etmeye başladığında yalnızca bir kez loglanacak
+
     private void Start()
     {
         pathfinding = FindObjectOfType<Pathfinding>();
@@ -39,14 +43,25 @@ public class RaycastDistance : MonoBehaviour
             {
                 if (crosswalk.PedestrianCount > 0 && distance < 8.25f) // Eğer crosswalk'ta yaya varsa
                 {
-                    Debug.Log("Yaya var, yavaşlıyorum");
+                    if (!isPedestrianLogged)
+                    {
+                        Debug.Log("Yaya var, yavaşlıyorum");
+                        isPedestrianLogged = true;  // Yaya geçişi kaydedildi
+                        LogPedestrianDetected(distance);  // Yayayı tespit et
+                    }
                     shouldSlowDown = true;
                     break;
                 }
 
-                else
+                else if (crosswalk.PedestrianCount == 0)
                 {
-                    Debug.Log("Crosswalk boş");
+                    // Yaya geçidi boşsa, araç hareket edebilir
+                    if (isPedestrianLogged)
+                    {
+                        Debug.Log("Yaya geçti, hareket ediyorum");
+                        isPedestrianLogged = false;  // Yaya geçtiği için bir daha yazdırmayacak
+                        LogPedestrianCleared();  // Yaya geçişi verisini kaydet
+                    }
                 }
             }
 
@@ -54,11 +69,20 @@ public class RaycastDistance : MonoBehaviour
             LightSystemSC lightSystem = hitObject.GetComponent<LightSystemSC>();
             if (lightSystem != null && lightSystem.red)
             {
-                if (distance < 8.25f)
+                if (lightSystem.red && distance < 8.25f)  // Kırmızı ışık ve uygun mesafe
                 {
-                    Debug.Log("Kırmızı ışık, yavaşlıyorum");
+                    if (lastLightStatus != "Kırmızı")
+                    {
+                        LogTrafficLight("Kırmızı", distance);
+                        lastLightStatus = "Kırmızı";
+                    }
                     shouldSlowDown = true;
                     break;
+                }
+                else if (!lightSystem.red && lastLightStatus != "Yeşil")
+                {
+                    LogTrafficLight("Yeşil", distance);
+                    lastLightStatus = "Yeşil";
                 }
             }
             // Önündeki araç kontrolü
@@ -71,7 +95,11 @@ public class RaycastDistance : MonoBehaviour
                     break;
                 }
             }
+
+
         }
+
+
 
         // 2. Aşağı Raycast: Yol materyali kontrolü
         Ray downRay = new Ray(rayOrigin.position, Vector3.down);
@@ -100,8 +128,25 @@ public class RaycastDistance : MonoBehaviour
         }
         else
         {
-            player.isSlowingDown = false;
-            player.isAccelerating = true;
+            // Araç hızlanabilir
+            if (player.currentSpeed <= 0.1f)  // Eğer hız çok düşükse (neredeyse durduysa)
+            {
+                // Durduktan sonra hızlanmaya başla
+                player.isSlowingDown = false;
+                player.isAccelerating = true;
+
+                // Sadece bir defa "Hareket Ediyor" yazdıracağız
+                if (!isMovingLogged)
+                {
+                    Debug.Log("Araç hareket ediyor");
+                    isMovingLogged = true;  // Hareket etme kaydedildi
+                }
+            }
+            else
+            {
+                player.isSlowingDown = false;  // Eğer hız azalmıyorsa, yavaşlatma durumu sıfırlanır
+                player.isAccelerating = true;  // Hızlanma devam eder
+            }
         }
 
         if (karliyol)
@@ -126,5 +171,24 @@ public class RaycastDistance : MonoBehaviour
 
         Debug.DrawRay(rayOrigin.position, rayOrigin.forward * maxDistance, Color.green);
         Debug.DrawRay(rayOrigin.position, Vector3.down * maxDistance, Color.blue);
+    }
+
+    private void LogPedestrianDetected(float distance)
+    {
+        CsvLogger.Log("Yaya", "Algılandı", distance, player.currentSpeed * 10, "Duruyor");
+    }
+
+    private void LogPedestrianCleared()
+    {
+        CsvLogger.Log("Yaya", "Geçiş Tamamlandı", 0, player.currentSpeed * 10, "Hareket Ediyor");
+    }
+
+    private void LogTrafficLight(string lightStatus, float distance)
+    {
+        string eventType = lightStatus == "Kırmızı" ? "Trafik Işığı Kırmızı" : "Trafik Işığı Yeşil";
+        string eventStatus = lightStatus == "Kırmızı" ? "Algılandı" : "Geçiş Tamamlandı";
+        string vehicleStatus = lightStatus == "Kırmızı" ? "Duruyor" : "Hareket Ediyor";
+
+        CsvLogger.Log(eventType, eventStatus, distance, player.currentSpeed * 10, vehicleStatus);
     }
 }
