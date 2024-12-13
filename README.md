@@ -3,3 +3,6 @@ Projenin boyutu çok büyük olduğu için git kullanarak bilgisayara kopyalanma
 
 ## Proje Dokümanı
 [Uploading YZ Ödev 13 Aral k.pdf…]()
+
+# Proje Raporu
+[Uploading YapayZeka_Odev_Raporu.docx…]()
