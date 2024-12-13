@@ -3,70 +3,90 @@ using UnityEngine;
 
 public class Greedy : MonoBehaviour
 {
-    Grid grid;
-    Player player;
-    public Transform seeker, target;
-    public bool driveable = true;
+    Grid grid;   // Önceden yapılmış Grid sınıfına ait bir nesne
+    Player player; // Önceden yapılmış Player sınıfına ait bir nesne
+    public Transform seeker, target; // Hedefe ulaşmaya çalışan ve hedef olan Transform bileşenleri (Bunlar haritada object olarak yapılmış)
+    public bool driveable = true; // Oyuncunun hareket edebilir durumda olup olmadığını kontrol eden 
+
+    //CSV
+    private int totalNodesVisited = 0; // Toplam gezilen düğüm sayısını takip et
+    private int totalCost = 0;         // Toplam maliyet fonksiyonunu hesaplamak için
+    public static float totalPathCost = 0;      // Toplam maliyet
+    public static float realDistanceToTarget = 0; // Gerçek mesafe
 
     private void Awake()
     {
-        grid = GetComponent<Grid>();
-        player = FindObjectOfType<Player>();  // Find the Player object
+        grid = GetComponent<Grid>();  // Bu objedeki Grid bileşenini al
+        player = FindObjectOfType<Player>(); // Haritadaki Player objesini bul
     }
 
     private void Update()
     {
-        FindPath(seeker.position, target.position);
-        GoToTarget();
+        
+        FindPath(seeker.position, target.position);  // Seeker ve hedef arasındaki yolu bul
+        GoToTarget();  // Hedefe gitmek için gerekli işlemleri yap
     }
 
     void GoToTarget()
     {
-        if (grid.path1 != null && grid.path1.Count > 0 && driveable)
+        // Eğer bir yol varsa ve oyuncu hareket edebiliyorsa
+        if (grid.path1 != null && grid.path1.Count > 0 && driveable) // path1 grid sınıfında List<Node> olarak tanımlanmış (yol temsil ediyor)
         {
-            Vector3 hedefNokta = grid.path1[0].WorldPosition;  // First node in path
-            player.LookToTarget(hedefNokta);
-            player.GidilcekYer(hedefNokta);  // Send target position to Player
+            Vector3 hedefNokta = grid.path1[0].WorldPosition;  // Yolun ilk düğümünün konumunu al  
+            player.LookToTarget(hedefNokta);  // Oyuncuyu hedefe doğru döndür
+            player.GidilcekYer(hedefNokta);  // Hedef pozisyonunu oyuncuya ilet
+           //("hedefNokta" player sınıfında "GidilcekYer" fonkisyonun parametresi olarak tanımlanmış)
         }
     }
 
     void FindPath(Vector3 startPoz, Vector3 targetPoz)
     {
-        Node startNode = grid.NodeFromWorldPoint(startPoz);
-        Node targetNode = grid.NodeFromWorldPoint(targetPoz);
+        // startNode ve targetNode nodleri oluşturuyoruz
+        Node startNode = grid.NodeFromWorldPoint(startPoz);  // Başlangıç pozisyonundan node'u bul
+        Node targetNode = grid.NodeFromWorldPoint(targetPoz);  // Hedef pozisyonundan node'u bul
 
-        List<Node> openSet = new List<Node>();
-        List<Node> closedSet = new List<Node>();
 
-        openSet.Add(startNode);
+        List<Node> openSet = new List<Node>();  // Kontrol edilecek düğümleri içeren liste
+        List<Node> closedSet = new List<Node>();  // Zaten kontrol edilmiş düğümleri içeren liste
 
-        while (openSet.Count > 0)
+
+        // Gerçek mesafeyi hesapla(euclidean distance)
+        realDistanceToTarget = Vector3.Distance(startPoz, targetPoz);
+
+        openSet.Add(startNode);  // Başlangıç düğümünü açık listeye ekle
+
+        while (openSet.Count > 0)  // Açık listede düğüm olduğu sürece döngü devam eder
         {
-            Node currentNode = openSet[0];
+            Node currentNode = openSet[0];   // İlk düğümü al
 
-            // Find the node with the lowest heuristic (hCost)
+            // En düşük hCost değerine sahip düğümü bul
             for (int i = 1; i < openSet.Count; i++)
             {
-                if (openSet[i].hCost < currentNode.hCost)
+                if (openSet[i].hCost < currentNode.hCost)  // "hCost" Node sınıfında tanımlanmış
                 {
                     currentNode = openSet[i];
                 }
             }
 
-            openSet.Remove(currentNode);
-            closedSet.Add(currentNode);
+            openSet.Remove(currentNode);   // Şu anki düğümü açık listeden çıkar
+            closedSet.Add(currentNode);    // Şu anki düğümü kapalı listeye ekle
 
-            // If we reached the target, retrace the path
+            
+
+            // Eğer hedefe ulaşıldıysa yolu geri izleyerek oluştur
             if (currentNode == targetNode)
             {
-                RetracePath(startNode, targetNode);
+                RetracePath(startNode, targetNode);  // Yolu oluştur
+                totalPathCost = totalCost; // Hedefe ulaşıldığında toplam maliyeti kaydet
+                LogAlgorithmResultsOnce(totalNodesVisited, (int)totalPathCost, realDistanceToTarget); // Log sonuçları
                 return;
             }
 
-            // Check each neighbor of the current node
+            // Şu anki düğümün tüm komşularını kontrol et
             foreach (Node neighbour in grid.GetNeighbours(currentNode))
             {
-                if (!neighbour.Walkable || closedSet.Contains(neighbour))
+                // Eğer düğüm geçilebilir değilse veya zaten kapalı listede ise devam et
+                if (!neighbour.Walkable || closedSet.Contains(neighbour))  // "Walkable" Node sınıfında tanımlanmış
                 {
                     continue;
                 }
@@ -120,13 +140,16 @@ public class Greedy : MonoBehaviour
                     }
                 }
 
-                // Calculate heuristic cost for the neighbor
+                // Komşu düğüm için heuristic maliyetini GetDistance fonk. kullanarak hesapla
                 neighbour.hCost = GetDistance(neighbour, targetNode);
 
-                // If the neighbor is not in the open set, add it
+                //CSV
+                totalCost += neighbour.hCost; // Maliyet fonksiyonunu artır
+
+                // Eğer komşu düğüm açık listede değilse, ekle
                 if (!openSet.Contains(neighbour))
                 {
-                    neighbour.parent = currentNode;  // Set parent to retrace path later
+                    neighbour.parent = currentNode; // Yolun geri izlenebilmesi için ebeveyni ata ("parent" Node sınıfında tanımlanmış)
                     openSet.Add(neighbour);
                 }
             }
@@ -135,24 +158,38 @@ public class Greedy : MonoBehaviour
 
     void RetracePath(Node startNode, Node endNode)
     {
-        List<Node> path = new List<Node>();
-        Node currentNode = endNode;
+        List<Node> path = new List<Node>();   // Oluşturulan yolu saklamak için bir liste
+        Node currentNode = endNode;     // Yolu hedef düğümden başlat
 
-        while (currentNode != startNode)
+        while (currentNode != startNode)    // Başlangıç düğümüne ulaşana kadar geri izle
         {
-            path.Add(currentNode);
-            currentNode = currentNode.parent;
+            path.Add(currentNode);    // Şu anki düğümü yola ekle
+            //CSV
+            totalNodesVisited++; // Bir düğüm ziyaret edildi
+            currentNode = currentNode.parent;   // Bir önceki düğüme geç
         }
 
-        path.Reverse();
-        grid.path1 = path;  // Set the computed path to grid
+
+        path.Reverse();   // Listeyi ters çevir (başlangıçtan hedefe doğru)
+        grid.path1 = path;  // Grid'deki path1 değişkenine oluşturulan yolu ata
     }
 
     int GetDistance(Node nodeA, Node nodeB)
     {
-        int dstX = Mathf.Abs(nodeA.gridX - nodeB.gridX);
-        int dstY = Mathf.Abs(nodeA.gridY - nodeB.gridY);
+        int dstX = Mathf.Abs(nodeA.gridX - nodeB.gridX);   // X koordinatlarındaki farkı al
+        int dstY = Mathf.Abs(nodeA.gridY - nodeB.gridY);   // Y koordinatlarındaki farkı al
 
-        return 10 * (dstX + dstY);  // Manhattan distance (suitable for grid-based paths)
+        return 10 * (dstX + dstY);  // Manhattan mesafesini hesapla (grid tabanlı yollar için uygun)
     }
+    private bool isLogged = false; // Tek seferlik loglama kontrol
+    // Algoritma bittiğinde sonuçları yalnızca bir kez kaydet
+    private void LogAlgorithmResultsOnce(int totalNodesVisited, int totalPathCost, float realDistanceToTarget)
+    {
+        if (!isLogged) // Eğer henüz loglanmadıysa
+        {
+            isLogged = true; // Loglama durumunu işaretle
+            CsvLogger.Log("", "", 0, 0, "", "GreedySearch", totalNodesVisited, totalPathCost, realDistanceToTarget); // Gerçek mesafeyi ekleyin
+        }
+    }
+
 }

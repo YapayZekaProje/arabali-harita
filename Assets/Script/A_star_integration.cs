@@ -15,6 +15,12 @@ public class Pathfinding : MonoBehaviour
     Player player;
     private bool requestSent = false; // KELVÝNDEN ALINDI
 
+    // CSV variables
+    private int totalNodesVisited = 0; // Total visited nodes
+    public static int totalCost = 0; // Total path cost
+    public static float realDistanceToTarget = 0; // Real distance to target
+    private bool isLogged = false; // Tek seferlik loglama kontrolü
+
     private void Awake()
     {
         grid = GetComponent<Grid>();
@@ -50,7 +56,7 @@ public class Pathfinding : MonoBehaviour
             return;
         }
 
-        string filePath = Path.Combine(Application.dataPath, "Script", "GridInfo.json"); // Chemin vers le fichier JSON
+        string filePath = Path.Combine(Application.dataPath, "Script", "GridInfo.json");// Chemin vers le fichier JSON
         List<Dictionary<string, object>> gridInfoList = new List<Dictionary<string, object>>();
 
         float nodeRadius = grid.NodeRadius; // Node yarýçapýný alýn
@@ -107,6 +113,9 @@ public class Pathfinding : MonoBehaviour
             using (TcpClient client = new TcpClient(serverIP, port))
             using (NetworkStream stream = client.GetStream())
             {
+                //CSV
+                realDistanceToTarget = Vector3.Distance(startPoz, targetPoz); // Gerçek mesafeyi hesapla
+
                 // Baþlangýç ve hedef pozisyonlarýný gönderin
                 string request = $"{startPoz.x},{startPoz.y},{startPoz.z};{targetPoz.x},{targetPoz.y},{targetPoz.z}";
                 Debug.Log($"Sunucuya istek gönderiliyor: {request}");
@@ -152,6 +161,9 @@ public class Pathfinding : MonoBehaviour
                 if (node != null)
                 {
                     path.Add(node);
+
+                    //CSV
+                    totalNodesVisited++; // Ziyaret edilen düðüm sayýsýný artýr
                 }
             }
         }
@@ -159,6 +171,18 @@ public class Pathfinding : MonoBehaviour
         // Oyuncuya yolu ayarla
         player.SetPath(path);
 
+        // Yolu yazdýr ve CSV'ye kaydet
+        LogAlgorithmResultsOnce(totalNodesVisited, totalCost, realDistanceToTarget);
+
+    }
+    // Algoritma bittiðinde sonuçlarý yalnýzca bir kez kaydet
+    private void LogAlgorithmResultsOnce(int totalNodesVisited, int totalCost, float realDistanceToTarget)
+    {
+        if (!isLogged) // Eðer henüz loglanmadýysa
+        {
+            isLogged = true; // Loglama durumunu iþaretle
+            CsvLogger.Log("", "", 0, 0, "", "AStar", totalNodesVisited, totalCost, realDistanceToTarget); // Gerçek mesafeyi ekleyin
+        }
     }
 
 }

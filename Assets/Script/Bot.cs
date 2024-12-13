@@ -34,10 +34,10 @@ public class Bot : MonoBehaviour
     private void Awake()
     {
         grid = FindObjectOfType<GridBot>();
-        bot = FindObjectOfType<Bot>(); 
+        bot = FindObjectOfType<Bot>();
 
         baslangicKonumu = bot.transform.position;
-        
+
     }
 
     private void Start()
@@ -50,7 +50,7 @@ public class Bot : MonoBehaviour
         GameKontrol();
         FindPath(transform.position, target.transform.position);
         GoToTarget();
-      
+
     }
 
     public void GidilcekYer(Vector3 hedefNoktasi)
@@ -60,7 +60,7 @@ public class Bot : MonoBehaviour
         // Önündeki araç kontrolü
         if (carSlowDown)
         {
-         // Öndeki araç varsa yavaşla
+            // Öndeki araç varsa yavaşla
             currentSpeed = 0;
             Debug.Log("Öndeki araç yakın, yavaşlıyorum.");
         }
