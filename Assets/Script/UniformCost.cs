@@ -144,6 +144,7 @@ public class UniformCost : MonoBehaviour
         while (currentNode != startNode) // Hedef düğümünden başlangıç düğümüne kadar geri git
         {
             path.Add(currentNode); // Mevcut düğümü yola ekle
+            totalNodesVisited++; // Bir düğüm ziyaret edildi
             currentNode = currentNode.parent; // Ebeveyn düğümüne geç
         }
 

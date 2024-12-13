@@ -71,8 +71,12 @@ public class Greedy : MonoBehaviour
             openSet.Remove(currentNode);   // Şu anki düğümü açık listeden çıkar
             closedSet.Add(currentNode);    // Şu anki düğümü kapalı listeye ekle
 
+<<<<<<< HEAD
             //CSV
             totalNodesVisited++; // Bir düğüm ziyaret edildi
+=======
+            
+>>>>>>> 637886d276bfd05e24b0b95a2eef7d11480c3588
 
             // Eğer hedefe ulaşıldıysa yolu geri izleyerek oluştur
             if (currentNode == targetNode)
@@ -165,6 +169,11 @@ public class Greedy : MonoBehaviour
         while (currentNode != startNode)    // Başlangıç düğümüne ulaşana kadar geri izle
         {
             path.Add(currentNode);    // Şu anki düğümü yola ekle
+<<<<<<< HEAD
+=======
+            //CSV
+            totalNodesVisited++; // Bir düğüm ziyaret edildi
+>>>>>>> 637886d276bfd05e24b0b95a2eef7d11480c3588
             currentNode = currentNode.parent;   // Bir önceki düğüme geç
         }
 
