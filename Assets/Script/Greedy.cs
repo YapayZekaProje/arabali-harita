@@ -1,9 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-
-
-public class griddy : MonoBehaviour
+public class Greedy : MonoBehaviour
 {
     Grid grid;
     Player player;
@@ -111,8 +109,15 @@ public class griddy : MonoBehaviour
                 // Allow flexibility when at a junction
                 if (currentNode.kavsak)
                 {
-                    // Logic for handling junction-specific movement can be added here
-                    // For instance, prioritizing certain lanes or other rules
+                    // Junction-specific movement logic
+                    if (currentNode.right && neighbour.left)
+                    {
+                        continue;
+                    }
+                    if (currentNode.left && neighbour.right)
+                    {
+                        continue;
+                    }
                 }
 
                 // Calculate heuristic cost for the neighbor
@@ -125,30 +130,29 @@ public class griddy : MonoBehaviour
                     openSet.Add(neighbour);
                 }
             }
-
         }
+    }
 
+    void RetracePath(Node startNode, Node endNode)
+    {
+        List<Node> path = new List<Node>();
+        Node currentNode = endNode;
 
-        void RetracePath(Node startNode, Node endNode)
+        while (currentNode != startNode)
         {
-            List<Node> path = new List<Node>();
-            Node currentNode = endNode;
-
-            while (currentNode != startNode)
-            {
-                path.Add(currentNode);
-                currentNode = currentNode.parent;
-            }
-
-            path.Reverse();
-            grid.path1 = path;  // Set the computed path to grid
+            path.Add(currentNode);
+            currentNode = currentNode.parent;
         }
-        int GetDistance(Node nodeA, Node nodeB)
-        {
-            int dstX = Mathf.Abs(nodeA.gridX - nodeB.gridX);
-            int dstY = Mathf.Abs(nodeA.gridY - nodeB.gridY);
 
-            return 10 * (dstX + dstY);  // Manhattan distance (suitable for grid-based paths)
-        }
+        path.Reverse();
+        grid.path1 = path;  // Set the computed path to grid
+    }
+
+    int GetDistance(Node nodeA, Node nodeB)
+    {
+        int dstX = Mathf.Abs(nodeA.gridX - nodeB.gridX);
+        int dstY = Mathf.Abs(nodeA.gridY - nodeB.gridY);
+
+        return 10 * (dstX + dstY);  // Manhattan distance (suitable for grid-based paths)
     }
 }

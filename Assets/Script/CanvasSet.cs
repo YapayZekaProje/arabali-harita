@@ -9,6 +9,8 @@ public class CanvasSet : MonoBehaviour
 {
     public TextMeshProUGUI speedText;
     public ParticleSystem rainParticleSystem;
+    public Player player; // Player scriptine referans
+
 
     [SerializeField] private GameObject target;
 
@@ -36,15 +38,18 @@ public class CanvasSet : MonoBehaviour
 
     public void YagmurKontrol()
     {
-        if (rainParticleSystem.isPlaying) // Eğer partikül sistemi çalışıyorsa
+        if (rainParticleSystem.isPlaying)
         {
-            rainParticleSystem.Stop(); // Yağmuru durdur
+            rainParticleSystem.Stop();
+            player.SetRainEffect(false); // Yağmur durduğunda etkiyi kaldır
         }
-        else if (camera1.enabled)// Eğer partikül sistemi çalışmıyorsa
+        else if (camera1.enabled)
         {
-            rainParticleSystem.Play(); // Yağmuru başlat
+            rainParticleSystem.Play();
+            player.SetRainEffect(true); // Yağmur başladığında etkileyin
         }
     }
+
     public void YagmurHiziArtir()
     {
         var emission = rainParticleSystem.emission;

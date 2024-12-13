@@ -136,11 +136,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2100208028559941110}
   - component: {fileID: 5459872135671498636}
-  - component: {fileID: 1058556038379161208}
   - component: {fileID: 4303605530454526485}
   - component: {fileID: 6067031174725505404}
   - component: {fileID: 6133104637907097942}
-  - component: {fileID: 467123530482904764}
   m_Layer: 10
   m_Name: casual_Male_G
   m_TagString: Untagged
@@ -187,20 +185,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &1058556038379161208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616406060653692748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 54f141628068b9b4493f69f797f003b2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AutoPlayAnimations: 1
-  PaletteOverride: {fileID: 0}
 --- !u!195 &4303605530454526485
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -271,23 +255,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &467123530482904764
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1616406060653692748}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df3acc06b23d0fd498387a32ea4cb210, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  waypoints: []
-  speed: 2
-  turnSpeed: 5
-  reachDistance: 0.5
-  waitTime: 10
 --- !u!1 &1719302345640664642
 GameObject:
   m_ObjectHideFlags: 0

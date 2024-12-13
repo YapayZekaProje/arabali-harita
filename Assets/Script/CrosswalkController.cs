@@ -63,7 +63,7 @@ public class CrosswalkController : MonoBehaviour
             {
                 pedestrianCount = 0;
                 gameObject.layer = 0; // Crosswalk'u boş yap
-                Debug.Log("Crosswalk boşaldı");
+                Debug.Log("Crosswalk boş");
             }
         }
     }

@@ -42,6 +42,22 @@ public class Player : MonoBehaviour
         SpeedTextUpdate();  // baþlangýçta hýz metnini güncelle
     }
 
+    private bool isRaining = false; // Yağmurun etkin olup olmadığını kontrol eden değişken
+
+    public void SetRainEffect(bool rainStatus)
+    {
+        isRaining = rainStatus; // Yağmurun durumu güncelleniyor
+        if (isRaining)
+        {
+            maxSpeed *= 0.7f; // Maksimum hız %70'e düşüyor
+        }
+        else
+        {
+            maxSpeed /= 0.7f; // Maksimum hız eski haline dönüyor
+        }
+    }
+
+
     // Yolun bitip bitmediðini kontrol eden metot
     public bool IsPathFinished()
     {

@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UniformCostSearch : MonoBehaviour
+public class UniformCost : MonoBehaviour
 {
     Grid grid; // Grid bileşenine referans
     Player player; // Player bileşenine referans

@@ -9,7 +9,7 @@ using Unity.VisualScripting;
 public class Bot : MonoBehaviour
 {
     [SerializeField] private GameObject target;
-    public Grid grid;
+    public GridBot grid;
 
     public float currentSpeed;
     private float moveSpeed = 5;
@@ -33,7 +33,7 @@ public class Bot : MonoBehaviour
 
     private void Awake()
     {
-        grid = FindObjectOfType<Grid>();
+        grid = FindObjectOfType<GridBot>();
         bot = FindObjectOfType<Bot>(); 
 
         baslangicKonumu = bot.transform.position;
@@ -150,7 +150,6 @@ public class Bot : MonoBehaviour
         kusUcumuMesafe = Vector3.Distance(transform.position, target.transform.position);
         if (kusUcumuMesafe <= 40f)
         {
-            Debug.LogWarning("tp attim");
             target.transform.position = grid.GetRandomWalkablePosition();
 
         }
