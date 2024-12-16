@@ -1,54 +1,63 @@
 ﻿// A* Arama Yol Bulma Harita 1
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class AStarSearch : MonoBehaviour
 {
-    Grid grid; // Önceden oluşturulmuş Grid sınıfına referans
-    Player player; // Önceden oluşturulmuş Player sınıfına referans
-    public Transform seeker, target; // Hareket eden oyuncu (seeker) ve hedefin Transform referansları
-    public bool driveable = true; // Oyuncunun hareket edip edemeyeceğini belirler
+    Grid grid; // Önceden oluþturulmuþ Grid sýnýfýna referans
+    Player player; // Önceden oluþturulmuþ Player sýnýfýna referans
+    public Transform seeker, target; // Hareket eden oyuncu (seeker) ve hedefin Transform referanslarý
+    public bool driveable = true; // Oyuncunun hareket edip edemeyeceðini belirler
 
+    private int totalNodesVisited = 0; // Toplam ziyaret edilen düðüm sayýsý
+    public static float totalPathCost = 0;      // Toplam maliyet
+    public static float realDistanceToTarget = 0; // Gerçek mesafe
+    private int totalCost = 0;  // Toplam maliyet fonksiyonu
+    
     private void Awake()
     {
-        grid = GetComponent<Grid>(); // Bu nesnedeki Grid bileşenini al
+        grid = GetComponent<Grid>(); // Bu nesnedeki Grid bileþenini al
         player = FindObjectOfType<Player>(); // Sahnedeki Player nesnesini bul
     }
 
     private void Update()
     {
-        FindPath(seeker.position, target.position); // Seeker ve hedef arasındaki yolu bul
-        GoToTarget(); // Hedefe doğru hareket et
+        FindPath(seeker.position, target.position); // Seeker ve hedef arasýndaki yolu bul
+        GoToTarget(); // Hedefe doðru hareket et
     }
 
     void GoToTarget()
     {
-        // Eğer bir yol varsa ve oyuncu hareket edebiliyorsa
-        if (grid.path1 != null && grid.path1.Count > 0 && driveable) // path1 grid sınıfında List<Node> olarak tanımlanmış (yol temsil ediyor)
+        // Eðer bir yol varsa ve oyuncu hareket edebiliyorsa
+        if (grid.path1 != null && grid.path1.Count > 0 && driveable) // path1 grid sýnýfýnda List<Node> olarak tanýmlanmýþ (yol temsil ediyor)
         {
-            Vector3 hedefNokta = grid.path1[0].WorldPosition; // Yolun ilk düğümünün dünya pozisyonunu al
-            player.LookToTarget(hedefNokta); // Oyuncuyu hedefe doğru döndür
+            Vector3 hedefNokta = grid.path1[0].WorldPosition; // Yolun ilk düðümünün dünya pozisyonunu al
+            player.LookToTarget(hedefNokta); // Oyuncuyu hedefe doðru döndür
             player.GidilcekYer(hedefNokta); // Oyuncuyu hedef pozisyona hareket ettir
         }
     }
 
     void FindPath(Vector3 startPoz, Vector3 targetPoz)
     {
-        Node startNode = grid.NodeFromWorldPoint(startPoz); // Başlangıç düğümünü bul
-        Node targetNode = grid.NodeFromWorldPoint(targetPoz); // Hedef düğümünü bul
+        Node startNode = grid.NodeFromWorldPoint(startPoz); // Baþlangýç düðümünü bul
+        Node targetNode = grid.NodeFromWorldPoint(targetPoz); // Hedef düðümünü bul
 
-        List<Node> openSet = new List<Node>(); // Değerlendirilecek düğümler
-        HashSet<Node> closedSet = new HashSet<Node>(); // Değerlendirilmiş düğümler
+        List<Node> openSet = new List<Node>(); // Deðerlendirilecek düðümler
+        HashSet<Node> closedSet = new HashSet<Node>(); // Deðerlendirilmiþ düðümler
+        // CSV
+        // Gerçek mesafeyi hesapla (Euclidean Distance)
+        realDistanceToTarget = Vector3.Distance(startPoz, targetPoz);
 
-        openSet.Add(startNode); // Başlangıç düğümünü açık sete ekle
+        openSet.Add(startNode); // Baþlangýç düðümünü açýk sete ekle
 
         while (openSet.Count > 0)
         {
             Node currentNode = openSet[0];
 
-            // En düşük fCost'a sahip düğümü bul (eşitlik durumunda en düşük hCost'a bakılır)
+            // En düþük fCost'a sahip düðümü bul (eþitlik durumunda en düþük hCost'a bakýlýr)
             for (int i = 1; i < openSet.Count; i++)
             {
                 if (openSet[i].fCost < currentNode.fCost ||
@@ -58,37 +67,42 @@ public class AStarSearch : MonoBehaviour
                 }
             }
 
-            openSet.Remove(currentNode); // Şu anki düğümü açık listeden çıkar
-            closedSet.Add(currentNode); // Şu anki düğümü kapalı listeye ekle
+            openSet.Remove(currentNode); // Þu anki düðümü açýk listeden çýkar
+            closedSet.Add(currentNode); // Þu anki düðümü kapalý listeye ekle
 
-            // Eğer hedefe ulaşıldıysa yolu geri izleyerek oluştur
+            // Eðer hedefe ulaþýldýysa yolu geri izleyerek oluþtur
             if (currentNode == targetNode) // Yol bulundu
             {
+                
+                
                 RetracePath(startNode, targetNode);
+                //CSV
+                totalPathCost = totalCost; // Hedefe ulaþýldýðýnda toplam maliyeti kaydet
+                LogAlgorithmResultsOnce(totalNodesVisited, (int)totalPathCost, realDistanceToTarget);
                 return;
             }
 
-            // Şu anki düğümün tüm komşularını kontrol et
+            // Þu anki düðümün tüm komþularýný kontrol et
             foreach (Node neighbour in grid.GetNeighbours(currentNode))
             {
                 if (!neighbour.Walkable || closedSet.Contains(neighbour))
                 {
-                    continue; // Yürünebilir değilse veya zaten kapalı setteyse devam et
+                    continue; // Yürünebilir deðilse veya zaten kapalý setteyse devam et
                 }
 
-                // Kavşakta değilken doğru hareket kurallarını uygula
+                // Kavþakta deðilken doðru hareket kurallarýný uygula
                 if (!currentNode.kavsak && !neighbour.kavsak)
                 {
                     // Yön kontrolü
-                    if (currentNode.gridY < neighbour.gridY && !currentNode.right) // Yukarı hareket (right == true)
+                    if (currentNode.gridY < neighbour.gridY && !currentNode.right) // Yukarý hareket (right == true)
                     {
                         continue;
                     }
-                    if (currentNode.gridX < neighbour.gridX && !currentNode.right) // Sağa hareket (right == true)
+                    if (currentNode.gridX < neighbour.gridX && !currentNode.right) // Saða hareket (right == true)
                     {
                         continue;
                     }
-                    if (currentNode.gridY > neighbour.gridY && !currentNode.left) // Aşağı hareket (left == true)
+                    if (currentNode.gridY > neighbour.gridY && !currentNode.left) // Aþaðý hareket (left == true)
                     {
                         continue;
                     }
@@ -98,7 +112,7 @@ public class AStarSearch : MonoBehaviour
                     }
                 }
 
-                // Kavşaklar dışında sağdan sola veya soldan sağa geçiş yapılmasını engelle
+                // Kavþaklar dýþýnda saðdan sola veya soldan saða geçiþ yapýlmasýný engelle
                 if (!currentNode.kavsak)
                 {
                     if (currentNode.right && neighbour.left)
@@ -111,10 +125,10 @@ public class AStarSearch : MonoBehaviour
                     }
                 }
 
-                // Kavşakta esneklik sağla
+                // Kavþakta esneklik saðla
                 if (currentNode.kavsak)
                 {
-                    // Kavşak özel hareket mantığı
+                    // Kavþak özel hareket mantýðý
                     if (currentNode.right && neighbour.left)
                     {
                         continue;
@@ -125,10 +139,10 @@ public class AStarSearch : MonoBehaviour
                     }
                 }
 
-                // Komşu düğüm için heuristic maliyetini GetDistance fonk. kullanarak hesapla
+                // Komþu düðüm için heuristic maliyetini GetDistance fonk. kullanarak hesapla
                 int newMovementCostToNeighbour = currentNode.gCost + GetDistance(currentNode, neighbour);
 
-                // Eğer komşu düğüm açık listede değilse, ekle
+                // Eðer komþu düðüm açýk listede deðilse, ekle
                 if (newMovementCostToNeighbour < neighbour.gCost || !openSet.Contains(neighbour))
                 {
                     neighbour.gCost = newMovementCostToNeighbour;
@@ -151,18 +165,19 @@ public class AStarSearch : MonoBehaviour
 
         while (currentNode != startNode)
         {
-            path.Add(currentNode); // Yol düğümlerini geri izleyerek listeye ekle
+            path.Add(currentNode); // Yol düðümlerini geri izleyerek listeye ekle
+            totalNodesVisited++; // Bir düðüm ziyaret edildi
             currentNode = currentNode.parent;
         }
 
-        path.Reverse(); // Yolun doğru sırasını elde etmek için ters çevir
-        grid.path1 = path; // Bulunan yolu grid'in path1 değişkenine ata
+        path.Reverse(); // Yolun doðru sýrasýný elde etmek için ters çevir
+        grid.path1 = path; // Bulunan yolu grid'in path1 deðiþkenine ata
     }
 
     int GetDistance(Node nodeA, Node nodeB)
     {
-        int dstX = Mathf.Abs(nodeA.gridX - nodeB.gridX); // X eksenindeki farkı al
-        int dstY = Mathf.Abs(nodeA.gridY - nodeB.gridY); // Y eksenindeki farkı al
+        int dstX = Mathf.Abs(nodeA.gridX - nodeB.gridX); // X eksenindeki farký al
+        int dstY = Mathf.Abs(nodeA.gridY - nodeB.gridY); // Y eksenindeki farký al
 
         if (dstX > dstY)
         {
@@ -170,4 +185,16 @@ public class AStarSearch : MonoBehaviour
         }
         return 14 * dstX + 10 * (dstY - dstX);
     }
+    private bool isLogged = false; // Tek seferlik loglama kontrolü
+    private void LogAlgorithmResultsOnce(int totalNodesVisited, int totalPathCost, float realDistanceToTarget)
+    {
+        if (!isLogged)
+        {
+            isLogged = true;
+
+            CsvLogger.Log("", "", 0, 0, "", "AStarSearch", totalNodesVisited, totalPathCost, realDistanceToTarget);
+        }
+    }
+
+    
 }

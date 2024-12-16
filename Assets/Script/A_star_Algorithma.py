@@ -155,25 +155,6 @@ def a_star_pathfinding(grid, start_pos, target_pos):
             if not neighbor.walkable or neighbor in closed_set:
                 continue
 
-
-            # Direction control logic
-            if not current_node.kavsak and not neighbor.kavsak:  # If neither is an intersection
-                # Prevent movement to the opposite direction based on right/left properties
-                if current_node.grid_y < neighbor.grid_y and not current_node.right:  # Moving up
-                    continue
-                if current_node.grid_x < neighbor.grid_x and not current_node.right:  # Moving right
-                    continue
-                if current_node.grid_y > neighbor.grid_y and not current_node.left:  # Moving down
-                    continue
-                if current_node.grid_x > neighbor.grid_x and not current_node.left:  # Moving left
-                    continue
-            
-            # Prevent direct transitions between opposite directions
-            if current_node.right and neighbor.left and not neighbor.kavsak:
-                continue
-            if current_node.left and neighbor.right and not neighbor.kavsak:
-                continue
-
             tentative_g_cost = current_node.g_cost + neighbor.cost
 
             if tentative_g_cost < neighbor.g_cost:

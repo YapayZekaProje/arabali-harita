@@ -22,7 +22,7 @@ public class Greedy : MonoBehaviour
 
     private void Update()
     {
-        
+
         FindPath(seeker.position, target.position);  // Seeker ve hedef arasındaki yolu bul
         GoToTarget();  // Hedefe gitmek için gerekli işlemleri yap
     }
@@ -35,7 +35,7 @@ public class Greedy : MonoBehaviour
             Vector3 hedefNokta = grid.path1[0].WorldPosition;  // Yolun ilk düğümünün konumunu al  
             player.LookToTarget(hedefNokta);  // Oyuncuyu hedefe doğru döndür
             player.GidilcekYer(hedefNokta);  // Hedef pozisyonunu oyuncuya ilet
-           //("hedefNokta" player sınıfında "GidilcekYer" fonkisyonun parametresi olarak tanımlanmış)
+                                             //("hedefNokta" player sınıfında "GidilcekYer" fonkisyonun parametresi olarak tanımlanmış)
         }
     }
 
@@ -70,13 +70,6 @@ public class Greedy : MonoBehaviour
 
             openSet.Remove(currentNode);   // Şu anki düğümü açık listeden çıkar
             closedSet.Add(currentNode);    // Şu anki düğümü kapalı listeye ekle
-
-<<<<<<< HEAD
-            //CSV
-            totalNodesVisited++; // Bir düğüm ziyaret edildi
-=======
-            
->>>>>>> 637886d276bfd05e24b0b95a2eef7d11480c3588
 
             // Eğer hedefe ulaşıldıysa yolu geri izleyerek oluştur
             if (currentNode == targetNode)
@@ -169,11 +162,10 @@ public class Greedy : MonoBehaviour
         while (currentNode != startNode)    // Başlangıç düğümüne ulaşana kadar geri izle
         {
             path.Add(currentNode);    // Şu anki düğümü yola ekle
-<<<<<<< HEAD
-=======
+
             //CSV
             totalNodesVisited++; // Bir düğüm ziyaret edildi
->>>>>>> 637886d276bfd05e24b0b95a2eef7d11480c3588
+
             currentNode = currentNode.parent;   // Bir önceki düğüme geç
         }
 

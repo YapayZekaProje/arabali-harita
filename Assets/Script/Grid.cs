@@ -162,12 +162,13 @@ public class Grid : MonoBehaviour
 
         if (yoluCiz)
         {
-          DrawOnlyPath();
+
+            DrawOnlyPath();
         }
-
-        // YORUM SATIRLI DENE SONRA KALDIR DENE
-       // DrawPath();
-
+        else
+        {
+            DrawPath();
+        }
     }
 
     void DrawPath()

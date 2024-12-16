@@ -629,188 +629,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 47ef019eb3bddab469e56e5a31eebf68, type: 3}
   m_PrefabInstance: {fileID: 1585063588}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &12404604 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-  m_PrefabInstance: {fileID: 473045399}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &12404605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12404604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 756b3817ac732e34eb87bfa0df42a2d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1130715830}
-  grid: {fileID: 0}
-  currentSpeed: 0
-  maxSpeed: 10
-  deceleration: 13
-  acceleration: 7
-  isSlowingDown: 0
-  isAccelerating: 1
-  canSkid: 0
-  carSlowDown: 0
-  followDistance: 15
-  driveable: 1
-  kusUcumuMesafe: 20
---- !u!33 &12404606
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12404604}
-  m_Mesh: {fileID: 4711208715938537054, guid: 7f2eb32a90aace349adccd6efbc6bd9b, type: 3}
---- !u!82 &12404608
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12404604}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 771ce407ce807b74885ec23ebd1e6647, type: 3}
-  m_Resource: {fileID: 8300000, guid: 771ce407ce807b74885ec23ebd1e6647, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.5
-  m_Pitch: 1.25
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &12404610 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-  m_PrefabInstance: {fileID: 473045399}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &12404611
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12404604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ccb30cf6cdb2374d869dbe2dbbd66a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDistance: 7.5
-  rayOrigin: {fileID: 443520827}
-  bot: {fileID: 12404605}
---- !u!54 &12404613
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 12404604}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &13805988
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1549,9 +1367,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 264138748}
   - {fileID: 754690108}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &46095973
 PrefabInstance:
@@ -5912,11 +5730,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -7249,7 +7067,7 @@ Transform:
   m_GameObject: {fileID: 250044188}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25, y: 2.5, z: 23.8}
+  m_LocalPosition: {x: -3.2, y: 1.17, z: 19}
   m_LocalScale: {x: 5, y: 5, z: 5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -7710,11 +7528,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -11499,9 +11317,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 954875889}
   - {fileID: 759869655}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &404083842
 PrefabInstance:
@@ -12701,37 +12519,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 2d5fb229ae2945742b900a405a5e7a0b, type: 3}
   m_PrefabInstance: {fileID: 441292601}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &443520826
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 443520827}
-  m_Layer: 0
-  m_Name: Raycast Uc7
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &443520827
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 443520826}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7, z: 2.72}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 12404610}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &444498417
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13466,88 +13253,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
   m_PrefabInstance: {fileID: 565034979}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &473045399
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2123626588}
-    m_Modifications:
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -4.3
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -24.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_Name
-      value: Bot (6)
-      objectReference: {fileID: 0}
-    - target: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_TagString
-      value: araba
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 407498779253349651, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-    - {fileID: 2665804672978440486, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-    - {fileID: 854680531530667381, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 443520827}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 12404608}
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 12404606}
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 12404605}
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 12404611}
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 12404613}
-  m_SourcePrefab: {fileID: 100100000, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
 --- !u!1001 &473264977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14483,11 +14188,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -15093,9 +14798,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1458095559}
   - {fileID: 1884073761}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1 &515778367 stripped
 GameObject:
@@ -17754,11 +17459,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 515019829}
@@ -19333,11 +19038,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 1244851184}
@@ -19722,11 +19427,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -20846,11 +20551,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -21133,11 +20838,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -21353,88 +21058,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 05aec82adc02f16409639716322b1673, type: 3}
   m_PrefabInstance: {fileID: 724852496}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &730658900
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2123626588}
-    m_Modifications:
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 117
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 110
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_Name
-      value: Bot (7)
-      objectReference: {fileID: 0}
-    - target: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_TagString
-      value: araba
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 407498779253349651, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-    - {fileID: 2665804672978440486, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-    - {fileID: 854680531530667381, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1631076470}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1128663604}
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1128663602}
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1128663601}
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1128663607}
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1128663609}
-  m_SourcePrefab: {fileID: 100100000, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
 --- !u!1 &730659021 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: 4f32dfddb033d3e40b5841bc53cc1689, type: 3}
@@ -21708,9 +21331,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1872623576}
   - {fileID: 439457261}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &741117139
 PrefabInstance:
@@ -22309,11 +21932,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -22593,9 +22216,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &776028823
 PrefabInstance:
@@ -25736,6 +25359,7 @@ GameObject:
   - component: {fileID: 898578636}
   - component: {fileID: 898578639}
   - component: {fileID: 898578642}
+  - component: {fileID: 898578644}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -25773,7 +25397,7 @@ MonoBehaviour:
   UnwalkableMask:
     serializedVersion: 2
     m_Bits: 64
-  GridWroldSize: {x: 300, y: 260}
+  GridWroldSize: {x: 300, y: 300}
   NodeRadius: 3
   yoluCiz: 1
 --- !u!4 &898578638
@@ -25837,8 +25461,23 @@ MonoBehaviour:
   UnwalkableMask:
     serializedVersion: 2
     m_Bits: 64
-  GridWroldSize: {x: 300, y: 260}
+  GridWroldSize: {x: 300, y: 300}
   NodeRadius: 3
+--- !u!114 &898578644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 898578635}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ea71ea460d54024e8e2737c5dc410de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  seeker: {fileID: 2091832091}
+  target: {fileID: 250044192}
+  driveable: 1
 --- !u!1001 &900067229
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25969,11 +25608,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 1443990984}
@@ -26348,9 +25987,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1185273987}
   - {fileID: 974698894}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1 &931364454
 GameObject:
@@ -26567,11 +26206,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -27235,9 +26874,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1 &966862278
 GameObject:
@@ -27351,11 +26990,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 403662122}
@@ -27804,11 +27443,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 1806356246}
@@ -28130,7 +27769,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -83.92
+      value: -83
       objectReference: {fileID: 0}
     - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
       propertyPath: m_LocalRotation.w
@@ -29287,11 +28926,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -29513,9 +29152,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &1036594917
 PrefabInstance:
@@ -32472,188 +32111,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: b8ee657c6800ab849bb30b4375d02323, type: 3}
   m_PrefabInstance: {fileID: 1128393229}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1128663600 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-  m_PrefabInstance: {fileID: 730658900}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1128663601
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128663600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 756b3817ac732e34eb87bfa0df42a2d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1884224343}
-  grid: {fileID: 0}
-  currentSpeed: 0
-  maxSpeed: 10
-  deceleration: 13
-  acceleration: 7
-  isSlowingDown: 0
-  isAccelerating: 1
-  canSkid: 0
-  carSlowDown: 0
-  followDistance: 15
-  driveable: 1
-  kusUcumuMesafe: 20
---- !u!33 &1128663602
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128663600}
-  m_Mesh: {fileID: 4711208715938537054, guid: 7f2eb32a90aace349adccd6efbc6bd9b, type: 3}
---- !u!82 &1128663604
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128663600}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 771ce407ce807b74885ec23ebd1e6647, type: 3}
-  m_Resource: {fileID: 8300000, guid: 771ce407ce807b74885ec23ebd1e6647, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.5
-  m_Pitch: 1.25
-  Loop: 1
-  Mute: 1
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &1128663606 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-  m_PrefabInstance: {fileID: 730658900}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1128663607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128663600}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ccb30cf6cdb2374d869dbe2dbbd66a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDistance: 7.5
-  rayOrigin: {fileID: 1631076470}
-  bot: {fileID: 1128663601}
---- !u!54 &1128663609
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1128663600}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &1129121727 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8459440718648708348, guid: 8933e808e908349488f204e0c0a77325, type: 3}
@@ -32676,11 +32133,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 2083871000}
@@ -33649,11 +33106,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 1858695456}
@@ -34099,11 +33556,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -34284,11 +33741,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 2137410790}
@@ -34402,11 +33859,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 1630277081}
@@ -34542,7 +33999,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -72.5
+      value: -63.81
       objectReference: {fileID: 0}
     - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
       propertyPath: m_LocalRotation.w
@@ -35730,11 +35187,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 2051927069}
@@ -36531,9 +35988,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1249875593}
   - {fileID: 214972653}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &1247078294
 PrefabInstance:
@@ -37019,88 +36476,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 2509cc5763ca17f4598bf61fd585a93e, type: 3}
   m_PrefabInstance: {fileID: 1256604243}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1257051683
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2123626588}
-    m_Modifications:
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 123.15
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -82.84
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_Name
-      value: Bot (3)
-      objectReference: {fileID: 0}
-    - target: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      propertyPath: m_TagString
-      value: araba
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 407498779253349651, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-    - {fileID: 2665804672978440486, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-    - {fileID: 854680531530667381, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2125521757}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2116100537}
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2116100535}
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2116100534}
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2116100540}
-    - targetCorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2116100542}
-  m_SourcePrefab: {fileID: 100100000, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
 --- !u!1001 &1258572060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37289,9 +36664,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 365030446}
   - {fileID: 522231569}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &1261124246
 PrefabInstance:
@@ -37593,11 +36968,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -38961,11 +38336,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -39100,11 +38475,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -40435,11 +39810,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -40965,11 +40340,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -41407,11 +40782,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -42826,11 +42201,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -43326,9 +42701,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1088191173}
   - {fileID: 971138866}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &1401268538
 PrefabInstance:
@@ -43411,11 +42786,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -45248,9 +44623,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 931364455}
   - {fileID: 1593823223}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &1444590089
 PrefabInstance:
@@ -47754,11 +47129,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -48124,11 +47499,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -48408,9 +47783,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1557435353}
   - {fileID: 1559753951}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &1576551584
 PrefabInstance:
@@ -49353,11 +48728,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 1260343404}
@@ -49436,9 +48811,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 232718550}
   - {fileID: 553859806}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &1614486718
 PrefabInstance:
@@ -49942,9 +49317,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 112298819}
   - {fileID: 838347878}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &1630762020
 PrefabInstance:
@@ -50010,37 +49385,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1952262279}
   m_SourcePrefab: {fileID: 100100000, guid: 8933e808e908349488f204e0c0a77325, type: 3}
---- !u!1 &1631076469
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1631076470}
-  m_Layer: 0
-  m_Name: Raycast Uc8
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1631076470
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1631076469}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7, z: 2.72}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1128663606}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1631484721
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51101,9 +50445,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &1668161445
 PrefabInstance:
@@ -51982,11 +51326,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 1401019964}
@@ -52329,11 +51673,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 1612022154}
@@ -52473,11 +51817,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 1778033424}
@@ -52679,11 +52023,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -53039,11 +52383,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -53186,11 +52530,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -53355,9 +52699,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &1742076132
 PrefabInstance:
@@ -53791,11 +53135,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 1872617692}
@@ -54301,11 +53645,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -54330,9 +53674,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1923024324}
   - {fileID: 1747266671}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1 &1780195971
 GameObject:
@@ -55107,9 +54451,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 584877753}
   - {fileID: 1028381877}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &1806648270
 PrefabInstance:
@@ -55744,9 +55088,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1872623576}
   - {fileID: 439457261}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &1819755248
 PrefabInstance:
@@ -55930,9 +55274,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1 &1827776353 stripped
 GameObject:
@@ -55956,11 +55300,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 1574865627}
@@ -56224,11 +55568,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -56628,11 +55972,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -56958,9 +56302,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 496768586}
   - {fileID: 1052066050}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!4 &1862531505 stripped
 Transform:
@@ -56984,11 +56328,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 738323693}
@@ -57189,9 +56533,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1253660487}
   - {fileID: 711967774}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1 &1869884962 stripped
 GameObject:
@@ -57272,9 +56616,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 2083750055}
   - {fileID: 75598270}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1 &1872623575
 GameObject:
@@ -57872,11 +57216,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -59964,11 +59308,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -60139,11 +59483,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -60700,11 +60044,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -60800,11 +60144,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -61104,9 +60448,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 27510113}
   - {fileID: 2133455284}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!4 &1974483518 stripped
 Transform:
@@ -62518,9 +61862,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &2022101653
 PrefabInstance:
@@ -62822,11 +62166,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -63013,9 +62357,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &2029241403
 PrefabInstance:
@@ -63097,7 +62441,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b74c48c2e73e17c418c9394124b75daf, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 60
+      value: 61
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: b74c48c2e73e17c418c9394124b75daf, type: 3}
       propertyPath: m_LocalPosition.y
@@ -63209,11 +62553,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 929982254}
@@ -63670,9 +63014,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 0}
   - {fileID: 0}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1 &2044102281 stripped
 GameObject:
@@ -63701,11 +63045,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -63855,11 +63199,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 738323693}
@@ -63884,9 +63228,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1185789878}
   - {fileID: 36140258}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &2052862233
 PrefabInstance:
@@ -64336,11 +63680,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -64503,11 +63847,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 1778033424}
@@ -64534,11 +63878,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -64736,11 +64080,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 1869540350}
@@ -65097,9 +64441,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 1676305616}
   - {fileID: 435269238}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 2005160667}
 --- !u!1001 &2085483004
 PrefabInstance:
@@ -65285,11 +64629,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -65330,7 +64674,7 @@ AudioSource:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2091832086}
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 771ce407ce807b74885ec23ebd1e6647, type: 3}
@@ -65895,11 +65239,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 1816321535}
@@ -65927,11 +65271,11 @@ MonoBehaviour:
   - {fileID: 348524186}
   - {fileID: 1395394691}
   - {fileID: 379569076}
-  - {fileID: 2116100533}
+  - {fileID: 0}
   - {fileID: 512558445}
   - {fileID: 3974778}
-  - {fileID: 12404604}
-  - {fileID: 1128663600}
+  - {fileID: 0}
+  - {fileID: 0}
   detectionRadius: 30
   pedestrians:
   - {fileID: 0}
@@ -66134,188 +65478,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: c07ada992c3586e4dbf557bc4b8718cf, type: 3}
   m_PrefabInstance: {fileID: 2112189761}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2116100533 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 642287924342879162, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-  m_PrefabInstance: {fileID: 1257051683}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2116100534
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116100533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 756b3817ac732e34eb87bfa0df42a2d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 1276083768}
-  grid: {fileID: 0}
-  currentSpeed: 0
-  maxSpeed: 10
-  deceleration: 13
-  acceleration: 7
-  isSlowingDown: 0
-  isAccelerating: 1
-  canSkid: 0
-  carSlowDown: 0
-  followDistance: 15
-  driveable: 1
-  kusUcumuMesafe: 20
---- !u!33 &2116100535
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116100533}
-  m_Mesh: {fileID: 4711208715938537054, guid: 7f2eb32a90aace349adccd6efbc6bd9b, type: 3}
---- !u!82 &2116100537
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116100533}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 771ce407ce807b74885ec23ebd1e6647, type: 3}
-  m_Resource: {fileID: 8300000, guid: 771ce407ce807b74885ec23ebd1e6647, type: 3}
-  m_PlayOnAwake: 0
-  m_Volume: 0.5
-  m_Pitch: 1.25
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
-  Pan2D: 0
-  rolloffMode: 0
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!4 &2116100539 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 261786959625234688, guid: 79d0ca8b77e301442afdb49f102e8aed, type: 3}
-  m_PrefabInstance: {fileID: 1257051683}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2116100540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116100533}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0ccb30cf6cdb2374d869dbe2dbbd66a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  maxDistance: 7.5
-  rayOrigin: {fileID: 2125521757}
-  bot: {fileID: 2116100534}
---- !u!54 &2116100542
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2116100533}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1001 &2122731591
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66402,11 +65564,8 @@ Transform:
   - {fileID: 348524192}
   - {fileID: 1395394697}
   - {fileID: 379569082}
-  - {fileID: 2116100539}
   - {fileID: 512558451}
   - {fileID: 3974784}
-  - {fileID: 12404610}
-  - {fileID: 1128663606}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2124353868
@@ -66573,37 +65732,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2027865177}
   m_SourcePrefab: {fileID: 100100000, guid: bae26acf817c6dc4e82f95d9ef4ab46a, type: 3}
---- !u!1 &2125521756
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2125521757}
-  m_Layer: 0
-  m_Name: Raycast Uc4
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2125521757
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2125521756}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.7, z: 2.72}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2116100539}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2130845196
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -66763,9 +65891,9 @@ MonoBehaviour:
   waypoints:
   - {fileID: 573271429}
   - {fileID: 1533352370}
-  speed: 2.5
+  speed: 4
   reachDistance: 0.5
-  defaultWaitDuration: 3
+  defaultWaitDuration: 50
   trafficLight: {fileID: 0}
 --- !u!1001 &2138330522
 PrefabInstance:

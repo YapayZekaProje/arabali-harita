@@ -65,7 +65,8 @@ public class UniformCost : MonoBehaviour
                 RetracePath(startNode, targetNode); // Hedeften başlangıca kadar yolu geri takip et
 
                 //CSV
-                totalPathCost = totalCost; // Hedefe ulaşıldığında toplam maliyeti kaydet
+                totalPathCost = totalCost; // Hedefe ulaşıldığında toplam maliyeti kaydet,
+                totalNodesVisited++; // Bir düğüm ziyaret edildi
                 LogAlgorithmResultsOnce(totalNodesVisited, (int)totalPathCost, realDistanceToTarget); // Sonuçları kaydet
                 
                 return;
@@ -126,7 +127,7 @@ public class UniformCost : MonoBehaviour
                         openSet.Enqueue(neighbour, neighbour.gCost); // Komşuyu açık kümeye ekle
                     }
                    
-                    totalNodesVisited++; // Bir düğüm ziyaret edildi
+                    
                     totalCost += newCostToNeighbour; // Toplam maliyeti güncelle
 
                 }

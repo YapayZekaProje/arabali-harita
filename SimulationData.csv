@@ -1,5 +1,4 @@
 ﻿Tarih/Saat,Olay Turu,Olay Durumu,Olaya Mesafe (m),Hiz (Km/h),Arac Durumu,Algoritma Adı,Düğüm Sayısı,Maliyet, Gerçek Mesafe (m)
-<<<<<<< HEAD
 23:39:28,,,0.00,0.0,,UniformCostSearch,472,142520,178.25
 23:39:53,Yaya,Algılandı,4.18,100.0,Duruyor,N/A,0,0,0.00
 23:40:01,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
@@ -27,7 +26,6 @@
 23:42:51,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
 23:42:55,Yaya,Algılandı,5.59,0.0,Duruyor,N/A,0,0,0.00
 23:43:08,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
-=======
 18:39:47,Trafik Işığı Kırmızı,Algılandı,8.19,100.0,Duruyor,N/A,0,0,0.00
 18:39:59,Yaya,Algılandı,7.75,100.0,Duruyor,N/A,0,0,0.00
 18:40:08,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
@@ -203,4 +201,207 @@
 22:39:44,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
 22:39:49,Yaya,Algılandı,7.95,50.0,Duruyor,N/A,0,0,0.00
 22:40:00,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
->>>>>>> 637886d276bfd05e24b0b95a2eef7d11480c3588
+20:35:59,,,0.00,0.0,,UniformCostSearch,522,142520,178.25
+20:36:18,Yaya,Algılandı,3.74,100.0,Duruyor,N/A,0,0,0.00
+20:36:26,Yaya,Geçiş Tamamlandı,0.00,100.0,Hareket Ediyor,N/A,0,0,0.00
+20:36:27,Trafik Işığı Kırmızı,Algılandı,2.90,0.0,Duruyor,N/A,0,0,0.00
+20:36:36,Yaya,Algılandı,8.12,100.0,Duruyor,N/A,0,0,0.00
+20:36:40,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+20:37:25,,,0.00,0.0,,UniformCostSearch,522,142520,178.25
+20:37:35,Trafik Işığı Kırmızı,Algılandı,3.51,100.0,Duruyor,N/A,0,0,0.00
+20:39:11,,,0.00,0.0,,UniformCostSearch,522,142520,178.25
+20:39:38,Trafik Işığı Kırmızı,Algılandı,8.03,100.0,Duruyor,N/A,0,0,0.00
+20:40:10,Yaya,Algılandı,1.51,50.0,Duruyor,N/A,0,0,0.00
+20:40:16,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+20:40:38,,,0.00,0.0,,UniformCostSearch,522,142520,178.25
+20:40:48,Trafik Işığı Kırmızı,Algılandı,8.18,50.0,Duruyor,N/A,0,0,0.00
+20:40:54,Yaya,Algılandı,5.61,0.0,Duruyor,N/A,0,0,0.00
+20:40:57,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+20:41:35,Yaya,Algılandı,8.19,50.0,Duruyor,N/A,0,0,0.00
+20:41:41,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+20:41:47,Yaya,Algılandı,8.18,100.0,Duruyor,N/A,0,0,0.00
+20:41:55,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+22:33:48,,,0.00,0.0,,UniformCostSearch,522,142520,178.25
+22:34:16,Trafik Işığı Kırmızı,Algılandı,4.14,100.0,Duruyor,N/A,0,0,0.00
+22:34:25,Yaya,Algılandı,8.15,96.5,Duruyor,N/A,0,0,0.00
+22:34:31,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+22:34:32,Yaya,Algılandı,2.82,50.4,Duruyor,N/A,0,0,0.00
+22:34:38,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+22:34:58,Yaya,Algılandı,8.22,100.0,Duruyor,N/A,0,0,0.00
+22:35:01,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:13:34,,,0.00,0.0,,GreedySearch,54,15350,178.25
+23:13:45,Trafik Işığı Kırmızı,Algılandı,1.49,57.8,Duruyor,N/A,0,0,0.00
+23:14:28,Yaya,Algılandı,2.49,100.0,Duruyor,N/A,0,0,0.00
+23:14:28,Yaya,Geçiş Tamamlandı,0.00,97.6,Hareket Ediyor,N/A,0,0,0.00
+23:14:28,Yaya,Algılandı,2.08,99.1,Duruyor,N/A,0,0,0.00
+23:14:29,Yaya,Geçiş Tamamlandı,0.00,100.0,Hareket Ediyor,N/A,0,0,0.00
+23:14:33,Yaya,Algılandı,8.22,100.0,Duruyor,N/A,0,0,0.00
+23:14:35,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:16:51,,,0.00,0.0,,GreedySearch,54,15350,178.25
+23:17:21,Trafik Işığı Kırmızı,Algılandı,7.78,0.0,Duruyor,N/A,0,0,0.00
+23:17:44,,,0.00,0.0,,GreedySearch,54,15350,178.25
+23:18:10,Trafik Işığı Kırmızı,Algılandı,7.73,100.0,Duruyor,N/A,0,0,0.00
+23:18:25,Yaya,Algılandı,1.90,0.0,Duruyor,N/A,0,0,0.00
+23:18:40,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:18:54,Yaya,Algılandı,1.90,0.0,Duruyor,N/A,0,0,0.00
+23:18:55,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:18:56,Yaya,Algılandı,1.90,0.0,Duruyor,N/A,0,0,0.00
+23:19:01,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:19:15,,,0.00,0.0,,GreedySearch,54,15350,178.25
+23:19:25,Trafik Işığı Kırmızı,Algılandı,8.21,50.0,Duruyor,N/A,0,0,0.00
+23:19:32,Yaya,Algılandı,5.63,0.0,Duruyor,N/A,0,0,0.00
+23:19:33,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:19:54,Yaya,Algılandı,8.11,100.0,Duruyor,N/A,0,0,0.00
+23:20:06,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:20:22,Yaya,Algılandı,3.91,0.0,Duruyor,N/A,0,0,0.00
+23:20:22,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:20:38,Yaya,Algılandı,3.91,0.0,Duruyor,N/A,0,0,0.00
+23:20:38,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:20:39,Yaya,Algılandı,3.91,0.0,Duruyor,N/A,0,0,0.00
+23:20:45,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+23:20:56,Yaya,Algılandı,3.91,0.0,Duruyor,N/A,0,0,0.00
+23:21:19,,,0.00,0.0,,GreedySearch,54,15350,178.25
+23:21:47,Trafik Işığı Kırmızı,Algılandı,2.99,0.0,Duruyor,N/A,0,0,0.00
+23:44:14,,,0.00,0.0,,GreedySearch,54,15350,178.25
+23:53:05,,,0.00,0.0,,AStar,0,0,178.25
+00:01:21,,,0.00,0.0,,UniformCostSearch,522,142520,178.25
+00:01:43,,,0.00,0.0,,GreedySearch,54,15350,178.25
+00:01:54,Trafik Işığı Kırmızı,Algılandı,3.13,100.0,Duruyor,N/A,0,0,0.00
+00:02:53,Yaya,Algılandı,8.22,50.0,Duruyor,N/A,0,0,0.00
+00:02:54,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+00:02:56,Yaya,Algılandı,0.05,50.0,Duruyor,N/A,0,0,0.00
+00:03:29,,,0.00,0.0,,GreedySearch,54,15350,178.25
+00:03:40,Trafik Işığı Kırmızı,Algılandı,3.01,100.0,Duruyor,N/A,0,0,0.00
+00:04:22,Yaya,Algılandı,8.22,100.0,Duruyor,N/A,0,0,0.00
+00:04:31,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+00:06:44,,,0.00,0.0,,GreedySearch,54,15350,178.25
+00:07:14,Trafik Işığı Kırmızı,Algılandı,3.47,41.5,Duruyor,N/A,0,0,0.00
+00:08:07,,,0.00,0.0,,GreedySearch,54,15350,178.25
+00:08:44,Yaya,Algılandı,8.23,100.0,Duruyor,N/A,0,0,0.00
+00:09:37,,,0.00,0.0,,GreedySearch,54,15350,178.25
+00:09:47,Trafik Işığı Kırmızı,Algılandı,4.40,100.0,Duruyor,N/A,0,0,0.00
+00:10:33,Yaya,Algılandı,8.24,50.0,Duruyor,N/A,0,0,0.00
+00:10:40,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+00:10:41,Yaya,Algılandı,0.20,50.0,Duruyor,N/A,0,0,0.00
+00:10:43,Yaya,Geçiş Tamamlandı,0.00,50.0,Hareket Ediyor,N/A,0,0,0.00
+00:13:25,,,0.00,0.0,,GreedySearch,54,15350,178.25
+00:13:52,Trafik Işığı Kırmızı,Algılandı,8.11,100.0,Duruyor,N/A,0,0,0.00
+00:28:06,,,0.00,0.0,,AStar,0,0,178.25
+00:28:24,,,0.00,0.0,,AStar,0,0,178.25
+00:28:48,,,0.00,0.0,,AStar,0,0,178.25
+00:35:49,,,0.00,0.0,,GreedySearch,54,15350,178.25
+00:36:00,Trafik Işığı Kırmızı,Algılandı,3.67,50.0,Duruyor,N/A,0,0,0.00
+00:36:07,Yaya,Algılandı,1.09,0.0,Duruyor,N/A,0,0,0.00
+00:36:10,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+00:36:16,Yaya,Algılandı,4.61,50.0,Duruyor,N/A,0,0,0.00
+00:36:27,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+00:36:43,Yaya,Algılandı,8.13,100.0,Duruyor,N/A,0,0,0.00
+00:36:57,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+00:37:14,Yaya,Algılandı,8.16,50.0,Duruyor,N/A,0,0,0.00
+00:37:19,,,0.00,0.0,,GreedySearch,54,15350,178.25
+00:37:29,Trafik Işığı Kırmızı,Algılandı,8.16,100.0,Duruyor,N/A,0,0,0.00
+00:37:36,Yaya,Algılandı,2.73,0.0,Duruyor,N/A,0,0,0.00
+00:37:39,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+09:29:34,,,0.00,0.0,,GreedySearch,54,15350,178.25
+09:30:03,Trafik Işığı Kırmızı,Algılandı,8.22,100.0,Duruyor,N/A,0,0,0.00
+09:30:11,Yaya,Algılandı,8.10,100.0,Duruyor,N/A,0,0,0.00
+09:30:12,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+09:30:13,Yaya,Algılandı,2.01,51.1,Duruyor,N/A,0,0,0.00
+09:30:26,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+09:30:35,Yaya,Algılandı,6.24,100.0,Duruyor,N/A,0,0,0.00
+09:30:41,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+09:32:06,,,0.00,0.0,,GreedySearch,54,15350,178.25
+09:32:28,,,0.00,0.0,,GreedySearch,54,15350,178.25
+09:32:43,Trafik Işığı Kırmızı,Algılandı,8.14,100.0,Duruyor,N/A,0,0,0.00
+09:50:02,,,0.00,0.0,,GreedySearch,54,15350,178.25
+09:50:32,Trafik Işığı Kırmızı,Algılandı,3.08,0.0,Duruyor,N/A,0,0,0.00
+09:50:50,Yaya,Algılandı,8.03,100.0,Duruyor,N/A,0,0,0.00
+09:51:01,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+10:17:36,,,0.00,0.0,,GreedySearch,54,15350,178.25
+10:18:06,Trafik Işığı Kırmızı,Algılandı,8.10,100.0,Duruyor,N/A,0,0,0.00
+10:18:14,Yaya,Algılandı,8.25,100.0,Duruyor,N/A,0,0,0.00
+10:18:25,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+10:18:36,Yaya,Algılandı,8.17,100.0,Duruyor,N/A,0,0,0.00
+10:18:47,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+10:18:52,Yaya,Algılandı,8.15,100.0,Duruyor,N/A,0,0,0.00
+10:19:01,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+10:20:33,,,0.00,0.0,,GreedySearch,54,15350,178.25
+10:24:40,Trafik Işığı Kırmızı,Algılandı,8.20,50.0,Duruyor,N/A,0,0,0.00
+10:24:47,Yaya,Algılandı,8.23,100.0,Duruyor,N/A,0,0,0.00
+10:24:59,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+10:25:08,Yaya,Algılandı,8.14,100.0,Duruyor,N/A,0,0,0.00
+10:25:11,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+10:25:39,,,0.00,0.0,,UniformCostSearch,522,142520,178.25
+10:25:49,Trafik Işığı Kırmızı,Algılandı,8.24,100.0,Duruyor,N/A,0,0,0.00
+10:25:56,Yaya,Algılandı,2.82,0.0,Duruyor,N/A,0,0,0.00
+10:25:59,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+10:26:26,Yaya,Algılandı,8.18,50.0,Duruyor,N/A,0,0,0.00
+10:26:29,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+10:26:34,Yaya,Algılandı,8.02,100.0,Duruyor,N/A,0,0,0.00
+10:26:38,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+10:28:16,,,0.00,0.0,,UniformCostSearch,522,142520,178.25
+10:28:21,Yaya,Algılandı,8.23,50.0,Duruyor,N/A,0,0,0.00
+10:28:42,,,0.00,0.0,,UniformCostSearch,522,142520,178.25
+10:29:30,,,0.00,0.0,,UniformCostSearch,522,142520,178.25
+10:29:58,Trafik Işığı Kırmızı,Algılandı,6.58,98.1,Duruyor,N/A,0,0,0.00
+10:31:41,Yaya,Algılandı,8.23,100.0,Duruyor,N/A,0,0,0.00
+10:31:48,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+10:31:53,Yaya,Algılandı,8.06,100.0,Duruyor,N/A,0,0,0.00
+10:31:57,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+10:34:16,,,0.00,0.0,,UniformCostSearch,522,142520,178.25
+10:41:56,,,0.00,0.0,,UniformCostSearch,522,142520,178.25
+10:42:26,Trafik Işığı Kırmızı,Algılandı,8.07,100.0,Duruyor,N/A,0,0,0.00
+10:42:57,Yaya,Algılandı,2.53,100.0,Duruyor,N/A,0,0,0.00
+10:47:41,,,0.00,0.0,,GreedySearch,54,15350,178.25
+10:48:10,Trafik Işığı Kırmızı,Algılandı,3.31,100.0,Duruyor,N/A,0,0,0.00
+10:48:26,,,0.00,0.0,,GreedySearch,54,15350,178.25
+10:48:54,Trafik Işığı Kırmızı,Algılandı,8.07,100.0,Duruyor,N/A,0,0,0.00
+11:14:33,,,0.00,0.0,,GreedySearch,54,15350,178.25
+11:16:15,,,0.00,0.0,,UniformCostSearch,522,142520,178.25
+11:17:40,,,0.00,0.0,,UniformCostSearch,51,142520,178.25
+11:23:39,,,0.00,0.0,,AStarSearch,50,0,178.25
+11:24:20,,,0.00,0.0,,AStarSearch,50,0,178.25
+11:35:02,,,0.00,0.0,,GreedySearch,54,15350,178.25
+11:37:22,,,0.00,0.0,,GreedySearch,54,15350,178.25
+11:37:39,Trafik Işığı Kırmızı,Algılandı,8.19,100.0,Duruyor,N/A,0,0,0.00
+11:40:43,,,0.00,0.0,,GreedySearch,54,15350,178.25
+11:41:00,Trafik Işığı Kırmızı,Algılandı,8.07,100.0,Duruyor,N/A,0,0,0.00
+11:41:38,Yaya,Algılandı,3.03,50.0,Duruyor,N/A,0,0,0.00
+11:41:45,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+11:42:52,,,0.00,0.0,,GreedySearch,54,15350,178.25
+11:43:06,Trafik Işığı Kırmızı,Algılandı,8.05,100.0,Duruyor,N/A,0,0,0.00
+11:44:35,,,0.00,0.0,,GreedySearch,51,41659248,210.41
+11:44:36,Yaya,Algılandı,5.24,100.0,Duruyor,N/A,0,0,0.00
+11:44:37,Yaya,Geçiş Tamamlandı,0.00,100.0,Hareket Ediyor,N/A,0,0,0.00
+11:46:21,,,0.00,0.0,,GreedySearch,62,28250,275.44
+11:46:49,Trafik Işığı Kırmızı,Algılandı,1.79,100.0,Duruyor,N/A,0,0,0.00
+11:46:51,Yaya,Algılandı,7.97,100.0,Duruyor,N/A,0,0,0.00
+11:46:56,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+11:48:18,,,0.00,0.0,,AStarSearch,62,0,275.44
+11:48:33,Trafik Işığı Kırmızı,Algılandı,8.15,50.0,Duruyor,N/A,0,0,0.00
+11:50:11,,,0.00,0.0,,UniformCostSearch,63,181070,275.44
+11:50:39,Trafik Işığı Kırmızı,Algılandı,7.81,100.0,Duruyor,N/A,0,0,0.00
+11:50:49,Yaya,Algılandı,8.10,100.0,Duruyor,N/A,0,0,0.00
+11:50:50,Yaya,Geçiş Tamamlandı,0.00,41.7,Hareket Ediyor,N/A,0,0,0.00
+11:51:29,,,0.00,0.0,,UniformCostSearch,31,48650,134.41
+11:52:09,,,0.00,0.0,,UniformCostSearch,25,26090,111.36
+11:52:39,,,0.00,0.0,,UniformCostSearch,21,15920,105.58
+11:52:42,Yaya,Algılandı,0.15,100.0,Duruyor,N/A,0,0,0.00
+11:53:20,,,0.00,0.0,,AStarSearch,41,0,191.81
+11:53:35,Trafik Işığı Kırmızı,Algılandı,8.14,50.0,Duruyor,N/A,0,0,0.00
+11:56:56,,,0.00,0.0,,AStarSearch,43,0,197.76
+11:57:10,Trafik Işığı Kırmızı,Algılandı,8.15,100.0,Duruyor,N/A,0,0,0.00
+11:57:45,,,0.00,0.0,,AStarSearch,43,0,197.76
+11:57:55,Trafik Işığı Kırmızı,Algılandı,0.60,70.0,Duruyor,N/A,0,0,0.00
+12:26:26,,,0.00,0.0,,UniformCostSearch,79,267170,179.91
+12:26:44,Trafik Işığı Kırmızı,Algılandı,8.13,100.0,Duruyor,N/A,0,0,0.00
+12:27:08,,,0.00,0.0,,UniformCostSearch,76,234660,53.82
+12:27:45,Trafik Işığı Kırmızı,Algılandı,5.62,89.9,Duruyor,N/A,0,0,0.00
+12:28:13,,,0.00,0.0,,UniformCostSearch,76,234660,53.82
+12:28:25,Yaya,Algılandı,7.52,100.0,Duruyor,N/A,0,0,0.00
+12:28:32,Yaya,Geçiş Tamamlandı,0.00,0.0,Hareket Ediyor,N/A,0,0,0.00
+12:28:40,Trafik Işığı Kırmızı,Algılandı,7.28,100.0,Duruyor,N/A,0,0,0.00
+12:29:13,,,0.00,0.0,,UniformCostSearch,76,234660,53.82
+12:29:34,,,0.00,0.0,,UniformCostSearch,76,234180,53.82
+12:31:33,Trafik Işığı Kırmızı,Algılandı,8.17,100.0,Duruyor,N/A,0,0,0.00
+12:33:10,,,0.00,0.0,,UniformCostSearch,49,42670,152.83
