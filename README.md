@@ -1,4 +1,4 @@
-# TURKISH
+# TURKISH:
 # YAPAY ZEKAYA GİRİŞ DERSİ ÖDEVİ
 Projenin boyutu çok büyük olduğu için git kullanarak bilgisayara kopyalanmalıdır. Zip dosyası olarak indirilirken eksik dosya sebebiyle hatalarla karşılaşılabilir.
 
@@ -39,7 +39,7 @@ Geliştirdiğimiz bu simülasyon, otonom araç teknolojilerinin geleceğine ış
 [YapayZeka_Odev_Raporu.docx](https://github.com/user-attachments/files/18147876/YapayZeka_Odev_Raporu.docx)
 
 
-# ENGLİSH
+# ENGLISH :
 # INTRODUCTION TO ARTIFICIAL INTELLIGENCE COURSE ASSIGNMENT
 Due to the large size of the project, it should be cloned to your computer using Git. Errors may occur when downloaded as a zip file due to missing files.
 
