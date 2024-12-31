@@ -32,7 +32,7 @@ Otonom araçlar alanında işlevsellik, verimlilik ve güvenlik gibi kritik fakt
 
 Geliştirdiğimiz bu simülasyon, otonom araç teknolojilerinin geleceğine ışık tutarken, algoritmaların gerçek zamanlı performansını anlamak ve iyileştirmek için benzersiz bir platform sunmaktadır. Bu proje, mühendislik becerilerimizin bir yansımasının somut bir örneğidir.
 
-## Proje Dokümanı
+# Proje Dokümanı
 [YZ Ödev 13 Aral k.pdf](https://github.com/user-attachments/files/18147874/YZ.Odev.13.Aral.k.pdf)
 
 # Proje Raporu
