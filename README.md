@@ -43,6 +43,8 @@ Geliştirdiğimiz bu simülasyon,algoritmaların gerçek zamanlı performansın�
 
 
 # ENGLISH :
+Due to the large size of the project, it should be cloned to a computer using Git. Errors may occur when downloaded as a zip file due to missing files.
+
 # INTRODUCTION TO ARTIFICIAL INTELLIGENCE COURSE ASSIGNMENT
 Due to the large size of the project, it should be cloned to your computer using Git. Errors may occur when downloaded as a zip file due to missing files.
 
