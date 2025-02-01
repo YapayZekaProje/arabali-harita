@@ -3,19 +3,23 @@
 Projenin boyutu çok büyük olduğu için git kullanarak bilgisayara kopyalanmalıdır. Zip dosyası olarak indirilirken eksik dosya sebebiyle hatalarla karşılaşılabilir.
 
 # Otonom Araçlar için Dinamik Simülasyon ve Algoritma Performans Analizi
-Günümüzün hızla dijitalleşen dünyasında, otonom sistemler ve yapay zeka teknolojileri, sektörlerde büyük ölçüde yer almaya başlamaktaadır. Bu kapsamda geliştirdiğimiz Unity tabanlı otonom araç simülasyonu, yapay zeka algoritmalarını incelemek adına öne çıkan bir projedir. Proje, otonom araçların gerçek dünya senaryolarına olan uyumluluğunu değerlendirmek ve algoritmaların performansını sistematik bir şekilde analiz etmek üzere tasarlanmıştır.
+Günümüzün hızla dijitalleşen dünyasında, otonom sistemler ve yapay zeka teknolojileri, sektörlerde büyük ölçüde yer almaya başlamaktaadır. Bu kapsamda geliştirdiğimiz Unity tabanlı otonom araç simülasyonu, yapay zeka algoritmalarını incelemek adına geliştirilmiş bir projedir. Proje, algoritma tabanlı otonom araçların gerçek dünya senaryolarına olan uyumluluğunu değerlendirmek ve algoritmaların performansını sistematik bir şekilde analiz etmek üzere tasarlanmıştır.
 
 ## Projenin Temel Özellikleri
 ### 1. Gerçekçi Simülasyon Ortamı:
 
 Statik Engeller: Haritada sabit olarak yer alan binalar, yeşil alanlar ve yol sınırları gibi unsurlar, simülasyon ortamının doğal ve detaylı bir yapıya sahip olmasını sağlar.
+
 Dinamik Engeller: Trafik ışıkları, karşıdan karşıya geçen yayalar, seyir halindeki diğer araçlar ve rastgele oluşan hava durumu etkileri (örneğin, yağmur ve karlı yollar), otonom araç sisteminin karmaşık çevresel koşullarda dahi etkinliğini test etmeyi mümkün kılar.
 
 ### 2. Üç Farklı Yönlendirme Algoritması:
 
 Greedy Algoritması: Hızlı ve pratik bir çözüm sunarak, zaman açısından kritik durumlar için ideal bir seçenek oluşturur.
+
 Uniform Cost Algoritması: Kesin çözümler üreterek, en düşük maliyetli rotayı garanti eder.
+
 A* Algoritması: Hesaplama maliyeti ve çözüm optimalliği arasında mükemmel bir denge kurar, akademik ve endüstriyel uygulamalar için ideal bir araçtır.
+
 Bu üç algoritma, aynı senaryo altında çalıştırılarak, sonuçlar doğrudan karşılaştırılabilir hale getirilmiştir. Bu yaklaşım, algoritmaların güçlü ve zayıf yönlerini net bir şekilde ortaya koyar.
 
 ### 3. Veri Toplama ve Analiz:
@@ -27,10 +31,9 @@ Algoritmaların başarı oranları görselleştirilmiş grafiklerle raporlandı.
 
 ## Çalışmamız:
 
-Gerçek dünya koşullarını laboratuvar ortamına taşıyan özgün bir altyapıya sahiptir.
-Otonom araçlar alanında işlevsellik, verimlilik ve güvenlik gibi kritik faktörlerin optimizasyonuna üzerinde çalışma imkanı sağlar.
+Gerçek dünya koşullarını simülasyon ortamına taşıyan özgün bir altyapıya sahiptir.
 
-Geliştirdiğimiz bu simülasyon, otonom araç teknolojilerinin geleceğine ışık tutarken, algoritmaların gerçek zamanlı performansını anlamak ve iyileştirmek için benzersiz bir platform sunmaktadır. Bu proje, mühendislik becerilerimizin bir yansımasının somut bir örneğidir.
+Geliştirdiğimiz bu simülasyon,algoritmaların gerçek zamanlı performansını anlamak ve iyileştirmek için benzersiz bir platform sunmaktadır. Bu proje, mühendislik becerilerimizin bir yansımasının somut bir örneğidir.
 
 # Proje Dokümanı
 [YZ Ödev 13 Aral k.pdf](https://github.com/user-attachments/files/18147874/YZ.Odev.13.Aral.k.pdf)
